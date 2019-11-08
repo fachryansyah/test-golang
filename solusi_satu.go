@@ -1,7 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
+
+const hurufHidup string = "aiueo"
+const hurufMati string = "bcdfghijklmnpqrstvwxyz"
 
 func main() {
-	fmt.Println("test")
+	hitung("omama")
+}
+
+func hitung(huruf string) {
+	splitHuruf := strings.Split(huruf, "")
+	fmt.Println(splitHuruf)
 }
