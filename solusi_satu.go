@@ -9,15 +9,33 @@ const vocal string = "aiueo"
 const consonant string = "bcdfghijklmnpqrstvwxyz"
 
 func main() {
-	CountWord("omama")
+	vocal, consonant := CountWord("omama")
+	fmt.Println("Huruf hidup: ", vocal)
+	fmt.Println("Huruf mati: ", consonant)
 }
 
 // CountWord : menghitung huruf mati dan hidup
 /*
 	@Param string
-	@Return Println
+	@Return totalVocal, totalConsonant
 */
-func CountWord(word string) {
+func CountWord(word string) (int, int) {
 	splitWord := strings.Split(word, "")
-	fmt.Println(splitWord)
+	var totalVocal int
+	var totalConsonant int
+	var testedWord string
+
+	for _, item := range splitWord {
+		if strings.ContainsAny(item, vocal) {
+			if !strings.ContainsAny(item, testedWord) {
+				totalVocal++
+				testedWord += item
+			}
+		}
+		if strings.ContainsAny(item, consonant) {
+			totalConsonant++
+		}
+	}
+
+	return totalVocal, totalConsonant
 }
