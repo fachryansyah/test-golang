@@ -5,19 +5,19 @@ import (
 	"strings"
 )
 
-const hurufHidup string = "aiueo"
-const hurufMati string = "bcdfghijklmnpqrstvwxyz"
+const vocal string = "aiueo"
+const consonant string = "bcdfghijklmnpqrstvwxyz"
 
 func main() {
-	Hitung("omama")
+	CountWord("omama")
 }
 
-// Hitung : menghitung huruf mati dan hidup
+// CountWord : menghitung huruf mati dan hidup
 /*
 	@Param string
 	@Return Println
 */
-func Hitung(huruf string) {
-	splitHuruf := strings.Split(huruf, "")
-	fmt.Println(splitHuruf)
+func CountWord(word string) {
+	splitWord := strings.Split(word, "")
+	fmt.Println(splitWord)
 }
