@@ -1,4 +1,4 @@
-package main
+package solutionone
 
 import "testing"
 

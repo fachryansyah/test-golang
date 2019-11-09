@@ -1,4 +1,4 @@
-package main
+package solutionone
 
 import (
 	"fmt"
@@ -7,12 +7,6 @@ import (
 
 const vocal string = "aiueo"
 const consonant string = "bcdfghijklmnpqrstvwxyz"
-
-func main() {
-	vocal, consonant := CountWord("omama")
-	fmt.Println("Huruf hidup: ", vocal)
-	fmt.Println("Huruf mati: ", consonant)
-}
 
 // CountWord : menghitung huruf mati dan hidup
 /*
@@ -36,6 +30,9 @@ func CountWord(word string) (int, int) {
 			totalConsonant++
 		}
 	}
+
+	fmt.Println("Huruf hidup: ", totalVocal)
+	fmt.Println("Huruf mati: ", totalConsonant)
 
 	return totalVocal, totalConsonant
 }
