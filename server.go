@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	word "test-golang/solutionone"
+	word "github.com/fachryansyah/test-golang-solusi-menghitung-huruf"
 )
 
 type Response struct {
