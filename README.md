@@ -1,6 +1,7 @@
 # Test Golang
 Ini adalah repository untuk menjawab beberapa soal test golang.
-
+<br>
+[Dokumentasi API ](https://documenter.getpostman.com/view/1720373/SW18wurk?version=latest)
 ## Instalasi
 #### Clone project
 ```sh
